@@ -65,7 +65,7 @@
 
     <div class="areaCompras ml-2 mt-2 mr-2">
     <div class="row">
-      <div class="col-lg-3"></div>
+
       <div class="col-lg-6" >
        
 
@@ -78,17 +78,48 @@
           <img id="img3" onclick="img3()" src="mass1 (3).jpeg" class="miniimg mt-2 mr-2 mb-2" alt="">
           <img id="img4" onclick="img4()"src="mass1 (1).jpeg " class="miniimg mt-2 mb-2" alt="">
  </div>
- <div class="d-flex justify-content-center">
-   <h6 style="color:red; "class="H3mengo mt-2 ml-2 mr-2"><b>De R$159,00 Por R$87,00<br>Frete Grátis</b></h6>
- </div>
- <div class="d-flex justify-content-center">
-  <a href="https://jokeshop.pay.yampi.com.br/r/6ES18ZUCKS" class="efeito efeito-3 " >Comprar</a>
- </div>
+ 
       </div>
-      <div class="col-lg-3" >
-     
+      <div class="col-lg-6" >
+        <div class="d-flex justify-content-center">
+          
 
-       
+          <h6 style="color: grey;text-align: left;"  class="H3mengo ml-2 mt-1  mt-2">
+            Nós garantimos que todos os itens são os mesmos das fotos, se você receber um item errado, retornaremos o seu dinheiro ou reenviaremos gratuitamente, não hesite em comprar.
+          
+          </h6>
+          </div>
+          
+          <div class="d-flex justify-content-center">
+           
+
+         
+            <h6 style="color: grey;text-align: left" class="H3mengo ml-2 mt-1 mr-2">
+              Nova, Ciência moderna e tecnologia
+
+Tecnologia de adaptação de acupuntura, fácil operação
+
+Maravilhosa combinação de diversos sinais de pulsação que dão a verdadeira sensação da acupuntura,toque, manipulação, terapia de ventosas, massagem e esfoliação
+          </div>
+            
+         
+
+           
+               <h6 style="color: black;text-align: left;" class="H3mengo mt-1 ml-2  mr-2 ">
+                Proteção ao Consumidor de 90 Dias<br>
+                Garantia de Reembolso
+               </h6>
+               <h6 style="color: grey;text-align: left;" class="H3mengo mt-1 ml-2  mr-2 ">
+                Se o produto adquirido não é como descrito ou não chegou dentro da data estimada, nós garantimos o seu reembolso. Você receberá o dinheiro de volta dentro de 15 dias após a finalização da disputa. Esta garantia é adicional e não limita seus direitos como consumidor a garantias locais, conforme todas as leis e regulamentos obrigatórios aplicáveis em seu país de residência.
+               </h6>
+
+
+               <div class="d-flex justify-content-center">
+                <h6 style="color:red; "class="H3mengo mt-2 ml-2 mr-2"><b>De R$159,00 Por R$87,00<br>Frete Grátis</b></h6>
+              </div>
+              <div class="d-flex justify-content-center">
+               <a href="https://jokeshop.pay.yampi.com.br/r/6ES18ZUCKS" class="efeito efeito-3 " >Comprar</a>
+              </div>
          
 
 </div>
@@ -482,7 +513,7 @@ Mais é ótimo ."   </h5>
         </div>
         <div class="d-flex justify-content-center mb-1">
 
-          <a href="" class="efeito efeito-3 " >Comprar e Avaliar</a>
+          <a href="https://jokeshop.pay.yampi.com.br/r/6ES18ZUCKS" class="efeito efeito-3 " >Comprar e Avaliar</a>
 </div>
 <div class="d-flex justify-content-center mb-1">
   <h6 style="color:black; "class="H3mengo mt-2 ml-2 mr-2">Contato<br><span><a href="jokeshopatendimento@gmail.com?subject=Hello%20again">jokeshopatendimento@gmail.com</a></span><br><span><a style="color: green;" href="https://api.whatsapp.com/send?phone=5531991265232&text=Ol%C3%A1%2C%20estou%20interessado%20em%20comprar%20uma%20camisa%20da%20Jokeshop!">(31)99126-5232</a></span></h6>
@@ -526,6 +557,11 @@ function start() {
   
 }
 function timer() {
+
+   
+   
+
+
   ss--;
   if(ss==00){
     ss=60
@@ -537,6 +573,14 @@ function timer() {
   }
   var format = hh+':'+(mm<10 ? '0'+ mm:mm)+':'+(ss<10 ? '0'+ss:ss)
   document.getElementById('counter').innerText=format
+
+  if(mm<0){
+    debugger
+    document.getElementById('counter').innerText="Finalizada"
+
+    clearInterval(cron)
+  }
+  
   
 }
 
@@ -551,6 +595,10 @@ function timer() {
 
 
  }
+
+
+  
+
  function img3(){
    
    var name=document.getElementById("img3").src
